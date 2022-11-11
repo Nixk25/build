@@ -3,6 +3,8 @@
 
 *
     box-sizing: border-box    
+
+    
 body 
     +reg
 
@@ -237,6 +239,36 @@ body
         line-height: 24px
         +bold
         color: $accent
+
+
+.portfolio
+    padding: 100px 0     
+    background:$grey url("../img/portfolio-pozadi.png") left repeat-y
+    background-size: 50%
+        
+    &-title 
+        font-size: 30px
+        +bold 
+        line-height: 45px
+        text-align: center 
+        margin-bottom: 100px
+        color: $accent 
+    &-arrows 
+        max-width: 120px
+        justify-content: space-between
+        display: flex
+        margin: auto
+        margin-top: 70px
+
+
+.slider-item
+   margin: auto
+   padding: 20px
+
+
+.arrow-left, .arrow-right
+    cursor: pointer
+      
 
 
 .modal

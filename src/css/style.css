@@ -380,6 +380,41 @@ body {
   color: #333333;
 }
 
+.portfolio {
+  padding: 100px 0;
+  background: #f5f5f5 url("../img/portfolio-pozadi.png") left repeat-y;
+  background-size: 50%;
+}
+.portfolio-title {
+  font-size: 30px;
+  font-family: "Museo Sans Bold";
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #333333;
+}
+.portfolio-arrows {
+  max-width: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.slider-item {
+  margin: auto;
+  padding: 20px;
+}
+
+.arrow-left, .arrow-right {
+  cursor: pointer;
+}
+
 .modal {
   position: fixed;
   left: 0;
