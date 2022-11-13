@@ -415,6 +415,105 @@ body {
   cursor: pointer;
 }
 
+.price-title {
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  font-family: "Museo Sans Bold";
+  font-weight: 700;
+  color: #000;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+.price-subtitle {
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  font-family: "Museo Sans Light";
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+}
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.card:hover .card-image::before {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.card-image {
+  position: relative;
+}
+.card-image img {
+  display: block;
+}
+.card-image:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+}
+.card-title {
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-family: "Museo Sans Light";
+  font-weight: 300;
+  line-height: 45px;
+  color: #000;
+}
+.card-link {
+  margin: 40px;
+}
+.card-link a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Museo Sans Bold";
+  font-weight: 700;
+  color: #333333;
+  position: relative;
+}
+.card-link a:hover:after {
+  height: 13px;
+}
+.card-link a:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: 0;
+  height: 3px;
+  background-color: #ffd200;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .modal {
   position: fixed;
   left: 0;
