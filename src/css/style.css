@@ -452,6 +452,13 @@ body {
   border: 1px solid #e8e8e8;
   margin-bottom: 30px;
 }
+@media (max-width: 1024px) {
+  .card {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
 .card:hover {
   -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
@@ -468,6 +475,11 @@ body {
 }
 .card-image img {
   display: block;
+}
+@media (max-width: 380px) {
+  .card-image img {
+    width: 100%;
+  }
 }
 .card-image:before {
   content: "";
@@ -500,7 +512,7 @@ body {
   position: relative;
 }
 .card-link a:hover:after {
-  height: 13px;
+  height: 8px;
 }
 .card-link a:after {
   content: "";

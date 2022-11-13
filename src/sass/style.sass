@@ -297,6 +297,10 @@ body
     text-align: center
     border: 1px solid $border-card__color
     margin-bottom: 30px
+    @media (max-width: 1024px)
+        display: block
+        margin: auto
+        margin-bottom: 30px
     &:hover 
         box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
         transition: 0.5s
@@ -309,6 +313,8 @@ body
         position: relative
         img 
             display: block
+            @media (max-width: 380px)
+                width: 100%
         &:before 
             content: ""
             position: absolute
@@ -337,7 +343,7 @@ body
         position: relative
         &:hover 
             &:after 
-                height:13px
+                height: 8px
         &:after
             content:""
             width: 100%
