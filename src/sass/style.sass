@@ -452,6 +452,100 @@ body
         @media (max-width: 321px)
             font-size: 17px
             line-height: 25px
+
+.benefits
+    margin: 50px 0
+
+.benefits-block
+    display: flex
+    justify-content: space-between
+    @media (max-width: 426px)
+        display: block
+        margin: auto 
+        
+        
+    img 
+        @media (max-width: 1025px)
+            width: 100%
+            padding-right: 10px
+        @media (max-width: 426px)
+            padding-right: 0
+
+
+.benefit
+    background-color:$benefit-bg
+    height: 410px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 370px
+    position: relative
+    @media (max-width:1025px )
+        width: 100%
+        
+    &-image 
+        position: absolute
+        bottom: 0
+        left: 0
+        
+    &-text 
+        margin: 26px 100px 0 26px
+        font-size: 16px
+        line-height: 23px
+        color:$normal-black
+        +reg 
+        strong
+            +bold
+        @media (max-width: 1025px)
+            margin:15px 0 0 5px
+            font-size: 14px
+        @media (max-width: 426px)
+            margin:40px 0 0 10px
+            
+
+.documents
+    &-title
+        margin: 100px 0
+        text-align: center
+        font-size: 30px
+        line-height: 45px
+        +bold
+        @media (max-width: 1025px)
+            margin-bottom: 50px
+    &-block 
+        display: flex
+        justify-content: space-between
+        @media (max-width: 426px)
+            display: block
+            margin: auto
+            
+            
+
+        img
+            @media (max-width: 1025px)
+                width: 100%
+                padding: 20px
+                margin-bottom: 0
+            @media (max-width: 426px)
+                padding: 0
+                margin: 0
+            
+
+.document
+    &-text 
+        text-align: center
+        display: block
+        margin-top: 40px
+        font-size: 18px
+        line-height: 24px
+        @media (max-width: 1025px)
+            font-size: 14px
+            margin-top: 15px
+        @media (max-width: 426px)
+            margin-bottom: 45px
+        
+    
+    
       
 
 

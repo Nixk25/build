@@ -665,6 +665,146 @@ body {
   }
 }
 
+.benefits {
+  margin: 50px 0;
+}
+
+.benefits-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 426px) {
+  .benefits-block {
+    display: block;
+    margin: auto;
+  }
+}
+@media (max-width: 1025px) {
+  .benefits-block img {
+    width: 100%;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 426px) {
+  .benefits-block img {
+    padding-right: 0;
+  }
+}
+
+.benefit {
+  background-color: #f7f7f7;
+  height: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 370px;
+  position: relative;
+}
+@media (max-width: 1025px) {
+  .benefit {
+    width: 100%;
+  }
+}
+.benefit-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.benefit-text {
+  margin: 26px 100px 0 26px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000;
+  font-family: "Museo Sans Light";
+  font-weight: 300;
+}
+.benefit-text strong {
+  font-family: "Museo Sans Bold";
+  font-weight: 700;
+}
+@media (max-width: 1025px) {
+  .benefit-text {
+    margin: 15px 0 0 5px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 426px) {
+  .benefit-text {
+    margin: 40px 0 0 10px;
+  }
+}
+
+.documents-title {
+  margin: 100px 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: "Museo Sans Bold";
+  font-weight: 700;
+}
+@media (max-width: 1025px) {
+  .documents-title {
+    margin-bottom: 50px;
+  }
+}
+.documents-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 426px) {
+  .documents-block {
+    display: block;
+    margin: auto;
+  }
+}
+@media (max-width: 1025px) {
+  .documents-block img {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 426px) {
+  .documents-block img {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.document-text {
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 24px;
+}
+@media (max-width: 1025px) {
+  .document-text {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 426px) {
+  .document-text {
+    margin-bottom: 45px;
+  }
+}
+
 .modal {
   position: fixed;
   left: 0;
