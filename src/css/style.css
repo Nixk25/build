@@ -814,7 +814,7 @@ body {
   background-size: 50%, cover;
   background-repeat: repeat-y, no-repeat;
 }
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .brief {
     background-image: url("../img/brief-bg.png"), url("../img/brief-bg-2.jpeg");
     background-position: top center, bottom center;
@@ -828,7 +828,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .brief-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
