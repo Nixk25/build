@@ -1,4 +1,4 @@
-@import "vars"
+@import vars
 @import "fonts"
 
 *
@@ -504,6 +504,7 @@ body
             
 
 .documents
+    margin-bottom: 220px
     &-title
         margin: 100px 0
         text-align: center
@@ -543,6 +544,143 @@ body
             margin-top: 15px
         @media (max-width: 426px)
             margin-bottom: 45px
+
+
+
+
+.brief
+    background-image: url("../img/brief-bg.png"), url("../img/brief-bg-2.jpeg")  
+    background-position: left center, right center
+    background-size: 50%, cover
+    background-repeat: repeat-y, no-repeat
+    @media (max-width: 600px)
+        background-image: url("../img/brief-bg.png"), url("../img/brief-bg-2.jpeg")  
+        background-position: top center, bottom center
+        background-size: 100% 50%, cover
+        background-repeat: repeat-x, no-repeat
+        padding:  0
+    &-block 
+        display: flex
+        @media (max-width: 600px)
+            flex-direction: column
+    &-interview
+        flex: 0 0 50%
+        max-width: 50%
+        padding-right: 170px
+        text-align: center
+        @media (max-width: 1024px)
+            padding-right: 30px
+            padding-bottom: 50px
+            flex: 0 0 100%
+            max-width: 100%
+    &-form
+        flex: 0 0 50%
+        max-width: 50%
+        padding-left: 220px
+        text-align: center
+        @media (max-width: 1024px)
+            padding-left: 30px
+            flex: 0 0 100%
+            max-width: 100%
+        @media (max-width: 426px)
+            padding: 0
+    &-title 
+        font-size: 22px
+        line-height: 33px
+        color: $normal-black
+        +bold 
+        margin-top: 100px
+        @media (max-width: 1024px)
+            font-size: 18px
+            margin-bottom: 40px
+    &-subtitle 
+        font-size: 16px
+        line-height: 45px
+        margin-top: 50px
+        margin-bottom: 100px
+        display: block
+        @media (max-width: 1024px)
+            font-size: 14px
+            margin-bottom: 70px
+.list
+    list-style-type: none
+    padding:0
+    &-item 
+        margin-bottom: 40px 
+        align-items: center 
+        &__text
+            font-size: 18px
+            +bold 
+            max-width: 400px
+            color: $normal-black
+            @media (max-width: 1024px)
+                font-size: 14px
+                max-width: 300px
+        &__counter 
+            border: 2px solid #000000
+            width: 35px
+            height: 35px
+            border-radius: 50px
+            display: inline-block
+            text-align: center
+            margin-right: 30px
+            line-height: 30px
+            @media (max-width: 1024px)
+                margin-right: 20px
+            
+.form
+    &-title  
+        font-size: 22px
+        line-height: 33px
+        color: $normal-black
+        +bold 
+        margin-top: 100px
+        @media (max-width: 1024px)
+            font-size: 18px
+            margin-bottom: 40px
+    &-subtitle
+        margin: 60px 0 50px 0
+        display: block  
+        text-align: center
+        @media (max-width: 1024px)
+            font-size: 14px
+            margin-bottom: 70px
+    &-name 
+        border: 1px solid #dddddd
+        border-radius: 10px
+        background-color: #ffffff
+        width: 100%
+        max-width: 370px
+        height: 65px
+        margin-bottom: 20px
+        padding: 20px
+        
+    &-tel 
+        border: 1px solid #dddddd
+        border-radius: 10px
+        background-color: #ffffff
+        max-width: 370px
+        height: 65px
+        width: 100%
+        margin-bottom: 30px
+        padding: 20px
+
+    &-btn
+        width:100%
+        max-width: 368px
+        height: 70px
+        margin: auto
+        margin-left: 5px
+    &-desc 
+        text-align: center
+        margin: auto
+        font-size: 15px
+        line-height: 24px
+        margin-top: 30px
+        display: block
+        
+
+
         
     
     
