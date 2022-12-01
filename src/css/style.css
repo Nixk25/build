@@ -1004,6 +1004,92 @@ body {
   display: block;
 }
 
+.footer {
+  position: relative;
+}
+
+.map {
+  width: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+@media (max-width: 426px) {
+  .map {
+    width: 100%;
+    margin-top: 620px;
+  }
+}
+@media (max-width: 320px) {
+  .map {
+    margin-top: 685px;
+  }
+}
+
+.contacts {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+@media (max-width: 769px) {
+  .contacts {
+    padding-left: 50px;
+  }
+}
+.contacts-list {
+  margin-top: 100px;
+}
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (max-width: 426px) {
+  .contacts-block {
+    display: block;
+  }
+}
+.contacts-title {
+  font-size: 22px;
+  line-height: 33px;
+  font-family: "Museo Sans Bold";
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+.list-item i {
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 20px;
+  color: #ffc000;
+}
+.list-item i.fa-clock {
+  margin-right: 15px;
+}
+.list-item__txt {
+  font-family: "Museo Sans Bold";
+  font-weight: 700;
+}
+
 .modal {
   position: fixed;
   left: 0;

@@ -680,9 +680,59 @@ body
         display: block
         
 
+.footer
+    position: relative
+.map 
+    width: 50%  
+    top: 0
+    left: 0
+    position: absolute
+    @media (max-width: 426px)
+        width: 100%
+        margin-top: 620px
+    @media (max-width: 320px)
+        margin-top: 685px
+.contacts 
+    flex: 0 0 50%
+    padding-top: 100px
+    padding-left: 200px
+    @media (max-width: 769px)
+        padding-left: 50px
+    &-list 
+        margin-top: 100px
+    &-block 
+        display: flex
+        justify-content: flex-end
+        @media (max-width: 426px)
+            display: block
+    &-title 
+        font-size: 22px
+        line-height: 33px
+        +bold 
+ul
+    list-style-type: none 
+    padding: 0
+.list
+    &-item 
+        display: flex
+        align-items: flex-start
+        margin-bottom: 40px
+        i
+            font-size: 20px
+            line-height: 20px 
+            text-align: center
+            margin-right: 20px
+            color: #ffc000
+            &.fa-clock
+                margin-right: 15px
+        &__txt
+            +bold
+        
+            
+
 
         
-    
+        
     
       
 
